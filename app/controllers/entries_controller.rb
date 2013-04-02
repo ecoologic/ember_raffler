@@ -6,18 +6,19 @@ class EntriesController < ApplicationController
   end
 
   def show
-    respond_with Entry.find(params[:id])
+    respond_with Entry.find params[:id]
   end
 
   def create
-    respond_with Entry.create(params[:entry])
+    respond_with Entry.create params[:entry].permit(:name, :winner)
   end
 
   def update
-    respond_with Entry.update(params[:id], params[:entry])
+    respond_with Entry.update params[:id], params[:entry].permit(:name, :winner)
   end
 
   def destroy
-    respond_with Entry.destroy(params[:id])
+    respond_with Entry.destroy params[:id]
   end
+
 end

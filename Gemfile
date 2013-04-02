@@ -19,6 +19,7 @@ group :assets do
   # gem 'therubyracer', platforms: :ruby
 
   gem 'uglifier', '>= 1.0.3'
+  gem 'quiet_assets'
 end
 
 gem 'jquery-rails'
@@ -41,3 +42,6 @@ gem 'jbuilder', '>= 1.0.1'
 # To use debugger
 # gem 'debugger'
 
+group :development do
+  gem 'pry-debugger'
+end
