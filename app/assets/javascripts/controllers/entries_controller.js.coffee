@@ -1,7 +1,8 @@
 Raffler.EntriesController = Ember.ArrayController.extend
   addEntry: ->
-    @pushObject Ember.Object.create(name: @get('newEntryName'))
-    @set 'newEntryName', ''
+    Raffler.Entry.createRecord(name: @get('newEntryName'))
+    @get('store').commit()
+    @set('newEntryName', '')
 
   drawWinner: ->
     @setEach 'latest', false
@@ -10,3 +11,4 @@ Raffler.EntriesController = Ember.ArrayController.extend
       entry = pool[Math.floor(Math.random()*pool.length)]
       entry.set 'winner', true
       entry.set 'latest', true
+      @get('store').commit()
