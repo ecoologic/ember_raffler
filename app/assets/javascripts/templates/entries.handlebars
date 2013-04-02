@@ -6,7 +6,7 @@
   <li>
     {{name}}
     {{#if winner}}
-      <span class='winner'>WINNER</span>
+      <span {{bindAttr class='winner latest'}}>WINNER</span>
     {{/if}}
   </li>
 {{/each}}
