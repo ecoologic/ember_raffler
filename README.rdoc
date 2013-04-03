@@ -2,9 +2,9 @@
 
 Features:
 
- - working
- - complete
- - baby-step commits
- - ember 1.0.0-rc.1
- - rails 4.0.alpha1
- - ruby 2.0-p0
+* working
+* complete
+* baby-step commits
+* ember 1.0.0-rc.1
+* rails 4.0.alpha1 (Ryan was on 3.2)
+* ruby 2.0-p0
