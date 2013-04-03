@@ -1,5 +1,7 @@
-{{view Ember.TextField valueBinding="newEntryName" action="addEntry"}}
-{{newEntryName}}
+<form>
+  {{view Ember.TextField valueBinding="newEntryName"}}
+  <input type='submit' value='Add' {{action addEntry}}>
+</form>
 
 <ul>
 {{#each controller}}
@@ -13,3 +15,5 @@
 </ul>
 
 <button {{action 'drawWinner'}} {{bindAttr disabled='allWinners'}}>Draw Winner!</button>
+
+{{newEntryName}}
