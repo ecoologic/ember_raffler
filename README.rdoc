@@ -1,6 +1,11 @@
+* Working: Yes
+* Interesting: Not really
+* Progress: Complete
+* Purpose: Experiment
+
 == Railscasts Ember.js Raffler episode 408
 
-Features:
+Highlights
 
 * working
 * complete
